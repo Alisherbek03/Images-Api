@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Images style start */
+
+.container .box-block {
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  columns: 4;
+}
+
+.boxs .box-block .img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.box,
+.box-block {
+  position: relative;
+  z-index: 30;
+  transition: all 0.8s ease;
+}
+
+.box:hover .download,
+.box-block:hover .download {
+  display: block;
+  transition: all 0.8s ease;
+}
+
+.download {
+  display: none;
+  font-size: 28px;
+  color: gray;
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 10px;
+  bottom: 10px;
+  left: 150px;
+}
+
+.download:hover {
+  color: rgb(237, 224, 224);
+}
+
+@media (max-width: 1400px) {
+  .container .box {
+    width: 90%;
+    columns: 3;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container .box {
+    width: 90%;
+    columns: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .box {
+    width: 90%;
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .box {
+    width: 90%;
+    columns: 1;
+  }
+}
